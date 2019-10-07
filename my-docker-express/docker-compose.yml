@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+    image: my-docker-express:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - backend
+    deploy:
+      mode: replicated
+      replicas: 5
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 50M
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 3
+        window: 120s
+
+networks:
+  backend:

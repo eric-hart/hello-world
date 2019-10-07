@@ -1,0 +1,24 @@
+{
+  "name": "myElectron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp default && cd dist && electron .",
+    "watch": "nodemon --watch src --exec yarn run start"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "devtron": "^1.4.0",
+    "gulp-cli": "^2.0.1"
+  },
+  "dependencies": {
+    "electron": "^4.0.1",
+    "nodemon": "^1.18.10",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0-beta.2"
+  }
+}

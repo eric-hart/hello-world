@@ -1,0 +1,23 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+{{ content }}
+<body>
+  <main>
+    <header>
+      {% if site.data.index.header %}
+      {{ site.data.index.header }}
+      {% endif %}
+    </header>
+    <content>
+      {% if site.data.index.url.greeting %}
+      <nav>
+        <a href="{{ site.data.index.url.greeting }}">greeting</a>
+      </nav>
+      {% endif %}
+    </content>
+  </main>
+</body>
+</html>

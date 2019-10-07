@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: groupId.my.spring.mybatis.ApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.275 sec

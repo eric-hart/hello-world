@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "module-resolver", {
+        "cwd": "babelrc",
+        "extensions": [".spec.js", ".js"],
+        "alias": {
+          "database": "./src/database",
+          "collection": "./src/collection",
+        }
+      }
+    ]
+  ],
+  "presets": [
+    "@babel/preset-flow",
+    "@babel/preset-env"
+  ]
+}

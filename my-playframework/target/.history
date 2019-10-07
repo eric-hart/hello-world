@@ -1,0 +1,9 @@
+exit
+~compile
+exit
+reload
+exit
+reload
+test
+exit
+run
