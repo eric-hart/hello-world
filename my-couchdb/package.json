@@ -21,6 +21,6 @@
   "dependencies": {
     "@babel/register": "^7.0.0",
     "ava": "^1.2.1",
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.6.1"
   }
 }
